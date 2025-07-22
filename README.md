@@ -19,14 +19,17 @@ This project aims to develop a smart scholastic assessment platform using **Natu
 2. **Activate the environment:**
    
    * For Linux/WSL:
-   source venv/bin/activate
-   
+    ```bash
+    source venv/bin/activate
+
    * For Windows:
+    ```bash
    source venv/bin/activate
 
 3. **Install dependencies:**
    
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. **Frontend Setup (React):**
 

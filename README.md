@@ -15,28 +15,37 @@ This project aims to develop a smart scholastic assessment platform using **Natu
 
    ```bash
    python -m venv venv
+   ```
    
 2. **Activate the environment:**
    
    * For Linux/WSL:
     ```bash
     source venv/bin/activate
+    ```
 
    * For Windows:
     ```bash
    source venv/bin/activate
+    ```
 
 3. **Install dependencies:**
    
    ```bash
    pip install -r requirements.txt
+   ```
 
 4. **Frontend Setup (React):**
 
 - Navigate to the frontend directory:
+  ```bash
   cd frontend
+  ```
+
 - Install Node.js dependencies:
+  ```bash
   npm install
+  ```
 
 ## Features & Technologies
 ### Features Built:
@@ -64,13 +73,15 @@ Visual Analytics: Interactive Pie and Bar charts for progress tracking using Cha
 Machine Learning/NLP:
 * Reinforcement Learning: Custom Deep Q-Learning implementation
 * NLP (Experimental): FLAN-T5 and LLaMA
-Visualization: Chart.js (via react-chartjs-2)
+  
+Visualization: 
+* Chart.js (via react-chartjs-2)
 
 ## Proposed Methodology
-User Onboarding: Secure login/registration system directs users to a personalized dashboard with an initial assessment quiz.
-Initial Assessment: A default quiz evaluates baseline performance across chapters and difficulty levels.
-Performance Evaluation: User responses (accuracy, time, difficulty) form the state input for adaptive learning.
-Reinforcement Learning Adaptation: A Deep Q-Learning (DQN) agent selects future quiz content based on user performance, optimizing for learning outcomes through reward-based feedback.
-Dynamic Quiz Generation: Quizzes are assembled from a tagged database, with attempted use of NLP models (FLAN-T5, LLaMA) to diversify questions dynamically.
-Visualization & Admin Tools: React-based dashboard uses Chart.js for visualizing performance trends; admin panel supports quiz monitoring and management.
-Continuous Learning Loop: The DQN agent updates its policy after each quiz to deliver progressively refined and personalized assessments.
+- User Onboarding: Secure login/registration system directs users to a personalized dashboard with an initial assessment quiz.
+- Initial Assessment: A default quiz evaluates baseline performance across chapters and difficulty levels.
+- Performance Evaluation: User responses (accuracy, time, difficulty) form the state input for adaptive learning.
+- Reinforcement Learning Adaptation: A Deep Q-Learning (DQN) agent selects future quiz content based on user performance, optimizing for learning outcomes through reward-based feedback.
+- Dynamic Quiz Generation: Quizzes are assembled from a tagged database, with attempted use of NLP models (FLAN-T5, LLaMA) to diversify questions dynamically.
+- Visualization & Admin Tools: React-based dashboard uses Chart.js for visualizing performance trends; admin panel supports quiz monitoring and management.
+- Continuous Learning Loop: The DQN agent updates its policy after each quiz to deliver progressively refined and personalized assessments.

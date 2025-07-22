@@ -1,0 +1,149 @@
+/* Login.css - Minimalist Style */
+
+.login-page-background {
+/* Light lavender background - adjust hex code as needed */
+background-color: #f2f0ff;
+}
+
+.login-card-minimal {
+background-color: #ffffff;
+border-radius: 16px !important; /* Prominent rounded corners */
+border: none;
+max-width: 420px; /* Adjust card width */
+margin: auto; /* Center the card horizontally */
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07) !important; /* Subtle shadow */
+}
+
+/* Labels */
+.login-label-minimal {
+font-size: 0.9rem; /* Slightly smaller label */
+font-weight: 500;
+color: #344054; /* Dark gray text */
+margin-bottom: 0.4rem; /* Space below label */
+display: block; /* Ensure it's block for margin */
+}
+
+/* Input fields */
+.login-input-minimal {
+border-radius: 8px !important; /* Rounded inputs */
+border: 1px solid #d0d5dd; /* Light gray border */
+padding: 0.75rem 1rem;
+font-size: 0.95rem;
+color: #667085; /* Placeholder text color */
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.login-input-minimal::placeholder { /* Style placeholder text */
+color: #adb5bd; /* Lighter gray for placeholder */
+font-weight: 400;
+}
+.login-input-minimal:focus {
+border-color: #a48ff1; /* Purple focus border */
+box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.15); /* Lighter purple focus glow */
+}
+
+/* Password input specific adjustments */
+.password-input-minimal {
+    border-right: none !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.password-toggle-btn-minimal {
+    border: 1px solid #d0d5dd;
+    border-left: none !important;
+    border-radius: 8px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background-color: #fff;
+    color: #98a2b3; /* Icon color */
+    padding: 0.75rem 0.75rem;
+    display: flex;
+    align-items: center;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.password-toggle-btn-minimal:hover {
+    background-color: #f8f9fa; /* Slight hover background */
+}
+/* Group focus state */
+.input-group:focus-within .login-input-minimal,
+.input-group:focus-within .password-toggle-btn-minimal {
+    border-color: #a48ff1;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.15);
+}
+
+/* Forgot Password link */
+.forgot-password-link-minimal {
+color: #b0b0b0; /* Faded gray color */
+text-decoration: none;
+font-weight: 500;
+transition: color 0.2s ease;
+}
+.forgot-password-link-minimal:hover {
+color: #888; /* Slightly darker on hover */
+text-decoration: none;
+}
+
+/* Login Button */
+.btn-login-submit-minimal {
+background-color: #7F56D9; /* Primary purple color from reference (adjust hex) */
+border: none;
+border-radius: 8px !important;
+padding: 0.8rem 1rem;
+font-weight: 600;
+font-size: 1rem;
+color: #ffffff;
+transition: background-color 0.2s ease;
+}
+.btn-login-submit-minimal:hover:not(:disabled) {
+background-color: #6941c6; /* Darker purple */
+}
+
+/* Sign Up Section */
+.register-prompt-minimal {
+color: #b0b0b0; /* Faded gray */
+}
+.btn-signup-outline-minimal {
+color: #7F56D9; /* Purple text */
+border-color: #d0d5dd; /* Light gray border */
+background-color: #ffffff;
+border-radius: 8px !important;
+padding: 0.8rem 1rem;
+font-weight: 600;
+font-size: 1rem;
+transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.btn-signup-outline-minimal:hover:not(:disabled) {
+background-color: #f9fafb; /* Very light gray background */
+border-color: #a48ff1; /* Purple border */
+color: #6941c6; /* Darker purple text */
+}
+
+/* Ensure buttons don't have extra default padding/margin issues */
+.btn {
+    box-shadow: none !important; /* Remove default bootstrap shadows if needed */
+}
+
+/* Alert style */
+.alert {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+}
+
+/* Add this to Login.css if you want specific Register title styling */
+.register-title {
+font-weight: 600;
+color: #344054; /* Example color */
+font-size: 1.6rem; /* Example size */
+}
+
+/* Fix to make sure date input text shows correctly when filled */
+.login-input-minimal[type="date"]:valid {
+    color: #344054; /* Match regular input text color */
+}
+/* Fix to make sure date input text shows placeholder color when empty */
+.login-input-minimal[type="date"] {
+    color: #adb5bd; /* Match placeholder color */
+}
+/* Override the above rule when a value is actually present */
+.login-input-minimal[type="date"]:valid {
+    color: #344054;
+}

@@ -7,7 +7,7 @@ This project aims to develop a smart scholastic assessment platform using **Natu
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Backend Setup (Python + Flask)
 
@@ -49,39 +49,39 @@ This project aims to develop a smart scholastic assessment platform using **Natu
 
 ## Features & Technologies
 ### Features Built:
-User Authentication: Secure login and registration system.
+**User Authentication:** Secure login and registration system.
 
-Personalized Dashboard: Gamified view showing XP, streaks, skill level, and quiz history.
+**Personalized Dashboard:** Gamified view showing XP, streaks, skill level, and quiz history.
 
-Adaptive Quiz Generation:
+**Adaptive Quiz Generation:**
 * Initial quiz from a predefined database.
 * Subsequent quizzes tailored using Deep Q-Learning based on user performance.
   
-Question Generation: Attempted integration of FLAN-T5 and LLaMA models for MCQ generation.
+**Question Generation:** Attempted integration of FLAN-T5 and LLaMA models for MCQ generation.
 
-Performance Evaluation: Tracks chapter-wise progress and rewards the RL agent based on quiz responses.
+**Performance Evaluation:** Tracks chapter-wise progress and rewards the RL agent based on quiz responses.
 
-Admin Dashboard: View user analytics, performance charts, and quiz management tools.
+**Admin Dashboard:** View user analytics, performance charts, and quiz management tools.
 
-Visual Analytics: Interactive Pie and Bar charts for progress tracking using Chart.js.
+**Visual Analytics:** Interactive Pie and Bar charts for progress tracking using Chart.js.
 
 ### Languages & Technologies Used:
-* Frontend: React.js, React Bootstrap, Tailwind CSS
-* Backend: Python (Flask)
-* Database: SQLite with SQLAlchemy ORM
+* **Frontend:** React.js, React Bootstrap, Tailwind CSS
+* **Backend:** Python (Flask)
+* **Database:** SQLite with SQLAlchemy ORM
   
-Machine Learning/NLP:
-* Reinforcement Learning: Custom Deep Q-Learning implementation
-* NLP (Experimental): FLAN-T5 and LLaMA
+* **Machine Learning/NLP:**
+   * Reinforcement Learning: Custom Deep Q-Learning implementation
+   * NLP (Experimental): FLAN-T5 and LLaMA
   
-Visualization: 
-* Chart.js (via react-chartjs-2)
+* **Visualization:** 
+   * Chart.js (via react-chartjs-2)
 
 ## Proposed Methodology
-- User Onboarding: Secure login/registration system directs users to a personalized dashboard with an initial assessment quiz.
-- Initial Assessment: A default quiz evaluates baseline performance across chapters and difficulty levels.
-- Performance Evaluation: User responses (accuracy, time, difficulty) form the state input for adaptive learning.
-- Reinforcement Learning Adaptation: A Deep Q-Learning (DQN) agent selects future quiz content based on user performance, optimizing for learning outcomes through reward-based feedback.
-- Dynamic Quiz Generation: Quizzes are assembled from a tagged database, with attempted use of NLP models (FLAN-T5, LLaMA) to diversify questions dynamically.
-- Visualization & Admin Tools: React-based dashboard uses Chart.js for visualizing performance trends; admin panel supports quiz monitoring and management.
-- Continuous Learning Loop: The DQN agent updates its policy after each quiz to deliver progressively refined and personalized assessments.
+- **User Onboarding:** Secure login/registration system directs users to a personalized dashboard with an initial assessment quiz.
+- **Initial Assessment:** A default quiz evaluates baseline performance across chapters and difficulty levels.
+- **Performance Evaluation:** User responses (accuracy, time, difficulty) form the state input for adaptive learning.
+- **Reinforcement Learning Adaptation:** A Deep Q-Learning (DQN) agent selects future quiz content based on user performance, optimizing for learning outcomes through reward-based feedback.
+- **Dynamic Quiz Generation:** Quizzes are assembled from a tagged database, with attempted use of NLP models (FLAN-T5, LLaMA) to diversify questions dynamically.
+- **Visualization & Admin Tools:** React-based dashboard uses Chart.js for visualizing performance trends; admin panel supports quiz monitoring and management.
+- **Continuous Learning Loop:** The DQN agent updates its policy after each quiz to deliver progressively refined and personalized assessments.
